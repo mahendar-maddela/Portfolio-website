@@ -27,7 +27,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="text-lg font-semibold mb-4">Mahendar Maddela</h3>
-            <p className="text-gray-400 text-sm">Software Engineer</p>
+            <p className="text-gray-400 text-sm">Full stack developer</p>
           </div>
 
           <div>

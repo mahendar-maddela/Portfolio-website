@@ -54,7 +54,7 @@ export function AboutSection() {
           viewport={{ once: true }}
         >
           <p className="text-lg text-gray-300 leading-relaxed">
-            I&apos;m a Software Engineer with 2+ years of experience building enterprise-grade solutions. My journey started with a passion for solving complex technical challenges and has evolved into architecting scalable systems that power real-world applications.
+            I&apos;m a Fullstack Developer with 2+ years of experience building enterprise-grade solutions. My journey started with a passion for solving complex technical challenges and has evolved into architecting scalable systems that power real-world applications.
           </p>
           <p className="text-lg text-gray-300 leading-relaxed">
             I specialize in Node.js backend development, cloud infrastructure on AWS, and database optimization. Whether it&apos;s building RESTful APIs, implementing payment systems, or managing IoT infrastructure, I bring a data-driven approach to every project.
