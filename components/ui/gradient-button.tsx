@@ -18,11 +18,13 @@ export function GradientButton({
   variant = 'primary',
 }: GradientButtonProps) {
   const baseClasses =
-    'px-6 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 active:scale-95 inline-flex items-center justify-center gap-2'
+    'relative px-6 py-3 rounded-xl font-medium text-sm sm:text-base transition-all duration-300 hover:scale-[1.03] active:scale-[0.97] inline-flex items-center justify-center gap-2 overflow-hidden shadow-lg'
 
   const variantClasses = {
-    primary: 'bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white',
-    secondary: 'bg-white/10 hover:bg-white/20 border border-white/20 text-white',
+    primary:
+      'bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white shadow-blue-500/20 hover:shadow-blue-500/35 border border-white/10',
+    secondary:
+      'bg-white/[0.06] hover:bg-white/[0.12] border border-white/15 text-white backdrop-blur-md hover:border-white/30',
   }
 
   if (href) {
@@ -46,3 +48,4 @@ export function GradientButton({
     </button>
   )
 }
+

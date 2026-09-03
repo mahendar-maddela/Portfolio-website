@@ -10,6 +10,7 @@ interface AnimatedCounterProps {
 }
 
 export function AnimatedCounter({ end, suffix = '', prefix = '', duration = 2 }: AnimatedCounterProps) {
+  const isFloat = end % 1 !== 0
   const [count, setCount] = useState(0)
   const elementRef = useRef<HTMLDivElement>(null)
   const hasAnimated = useRef(false)
@@ -25,10 +26,13 @@ export function AnimatedCounter({ end, suffix = '', prefix = '', duration = 2 }:
           const animateCount = () => {
             const now = Date.now()
             const progress = Math.min((now - startTime) / (endTime - startTime), 1)
-            setCount(Math.floor(end * progress))
+            const currentVal = end * progress
+            setCount(isFloat ? parseFloat(currentVal.toFixed(1)) : Math.floor(currentVal))
 
             if (progress < 1) {
               requestAnimationFrame(animateCount)
+            } else {
+              setCount(end)
             }
           }
 
@@ -43,13 +47,14 @@ export function AnimatedCounter({ end, suffix = '', prefix = '', duration = 2 }:
     }
 
     return () => observer.disconnect()
-  }, [end, duration])
+  }, [end, duration, isFloat])
 
   return (
-    <div ref={elementRef} className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+    <div ref={elementRef} className="text-4xl font-bold bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent tracking-tight">
       {prefix}
-      {count}
+      {isFloat ? count.toFixed(1) : count}
       {suffix}
     </div>
   )
 }
+
