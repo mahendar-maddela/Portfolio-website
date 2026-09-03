@@ -65,7 +65,8 @@ export function ContactSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     setSubmitted(true)
-    toast.success("Message recorded! Feel free to also send a direct email to mahendar1241@gmail.com")
+    toast.error("Form submission is under maintenance. Please send a direct email to  mahendar1241@gmail.com")
+    // toast.success("Message recorded! Feel free to also send a direct email to mahendar1241@gmail.com")
     setFormData({ name: '', email: '', company: '', message: '' })
     setTimeout(() => setSubmitted(false), 4000)
   }
@@ -221,7 +222,8 @@ export function ContactSection() {
                   className="p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-medium flex items-center gap-2"
                 >
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                  Thank you! Your message has been logged successfully.
+                  {/* Thank you! Your message has been logged successfully. */}
+                  Please send a direct email to  mahendar1241@gmail.com
                 </motion.div>
               )}
 
