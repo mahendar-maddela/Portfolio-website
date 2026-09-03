@@ -28,21 +28,30 @@ export function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 pt-4 px-4 sm:px-6 lg:px-8 pointer-events-none">
       <nav
-        className={`max-w-5xl mx-auto rounded-2xl transition-all duration-500 pointer-events-auto ${
-          scrolled
+        className={`max-w-5xl mx-auto rounded-2xl transition-all duration-500 pointer-events-auto ${scrolled
             ? 'glass-effect shadow-2xl border-white/15 bg-[#0c0d10]/80 py-2.5 px-6'
             : 'bg-transparent py-4 px-6 border border-transparent'
-        }`}
+          }`}
       >
         <div className="flex items-center justify-between">
-          <a href="#" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-500 to-purple-600 flex items-center justify-center text-white font-mono font-bold text-xs shadow-md group-hover:scale-105 transition-transform">
-              MM
+          <a href="#" className="flex items-center gap-2.5 group">
+            <div className="w-9 h-9 rounded-full overflow-hidden border border-white/25 shadow-md group-hover:scale-105 group-hover:border-blue-400 transition-all flex-shrink-0 bg-[#08090a] relative">
+              <img
+                src="/favicon.svg"
+                onError={(e) => {
+                  e.currentTarget.src = "/placeholder-user.jpg"
+                }}
+                alt="Mahendar Maddela"
+                className="w-full h-full object-cover object-top"
+              />
+              
+
             </div>
-            <span className="font-semibold text-white tracking-tight group-hover:text-blue-400 transition-colors">
+            <span className="font-semibold text-white tracking-tight group-hover:text-blue-400 transition-colors text-sm sm:text-base">
               Mahendar<span className="text-blue-500">.dev</span>
             </span>
           </a>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1 bg-white/[0.03] p-1.5 rounded-full border border-white/10">

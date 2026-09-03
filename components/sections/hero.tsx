@@ -116,6 +116,7 @@ export function HeroSection() {
           </div>
         </motion.div>
 
+
         {/* Main Heading */}
         <motion.div variants={itemVariants} className="space-y-3">
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight">
@@ -126,6 +127,7 @@ export function HeroSection() {
             Software Engineer & Full-Stack Developer
           </p>
         </motion.div>
+
 
         {/* Bio Paragraph */}
         <motion.div variants={itemVariants}>
