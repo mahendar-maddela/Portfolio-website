@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight, Download, Sparkles, Code2, Server, Cpu, Database, Cloud, Bot, Snowflake,  } from 'lucide-react'
+import { ArrowRight, Download, Sparkles, Code2, Server, Cpu, Database, Cloud, Bot, Snowflake, } from 'lucide-react'
 import { AnimatedCounter } from '@/components/ui/animated-counter'
 import { GradientButton } from '@/components/ui/gradient-button'
 import { toast } from "sonner"
@@ -110,7 +110,7 @@ export function HeroSection() {
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
             </span>
             <span className="text-xs font-medium text-gray-300 tracking-wide">
-              Available for Software Engineering Roles & Projects
+              Available for Software Developering Roles & Projects
             </span>
             <Sparkles size={14} className="text-amber-400 ml-0.5" />
           </div>
@@ -124,7 +124,7 @@ export function HeroSection() {
             <span className="gradient-text inline-block drop-shadow-sm">Mahendar Maddela</span>
           </h1>
           <p className="text-xl sm:text-2xl text-blue-400/90 font-medium tracking-wide">
-            Software Engineer & Full-Stack Developer
+            Software Developer & Full-Stack Developer
           </p>
         </motion.div>
 

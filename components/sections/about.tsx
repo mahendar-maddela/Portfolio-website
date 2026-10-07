@@ -75,7 +75,7 @@ export function AboutSection() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_45%,#08090a_95%)] opacity-50 pointer-events-none"></div>
             <div className="absolute bottom-3 left-3 right-3 text-center">
               <span className="px-3 py-1 rounded-full text-xs font-mono bg-black/70 backdrop-blur-md text-gray-200 border border-white/15 inline-block shadow-lg">
-                Software Engineer
+                Software Developer
               </span>
             </div>
           </div>
@@ -106,7 +106,7 @@ export function AboutSection() {
               Architecting Digital Backbones That Scale
             </h3>
             <p className="text-base text-gray-300 leading-relaxed">
-              I&apos;m a Software Engineer & Fullstack Developer with 2+ years of hands-on experience building enterprise-grade backend systems and scalable APIs.
+              I&apos;m a Software Developer & Fullstack Developer with 2+ years of hands-on experience building enterprise-grade backend systems and scalable APIs.
             </p>
             <p className="text-base text-gray-400 leading-relaxed">
               My expertise centers around Node.js backend architecture, AWS cloud management, EV charging OCPP protocols, and database query optimization. I bridge technical complexity with high-availability business needs.

@@ -34,7 +34,7 @@ export function Footer() {
               <h3 className="text-lg font-bold text-white tracking-tight">Mahendar Maddela</h3>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-              Software Engineer specializing in scalable Node.js backend systems, AWS cloud solutions, and enterprise APIs.
+              Software Developer specializing in scalable Node.js backend systems, AWS cloud solutions, and enterprise APIs.
             </p>
           </div>
 

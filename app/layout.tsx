@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   title: 'Mahendar Maddela - Full Stack Developer',
   description: 'Backend engineering portfolio showcasing enterprise APIs, cloud infrastructure, and full-stack solutions.',
   generator: 'Mahendar Maddela',
-  keywords: ['Backend Engineer', 'Full Stack Developer', 'Software Engineer', 'Node.js', 'APIs', 'Cloud Infrastructure', 'AWS', 'PostgreSQL'],
+  keywords: ['Backend Engineer', 'Full Stack Developer', 'Software Developer', 'Node.js', 'APIs', 'Cloud Infrastructure', 'AWS', 'PostgreSQL'],
   authors: [{ name: 'Mahendar Maddela' }],
   openGraph: {
-    title: 'Mahendar Maddela - Software Engineer',
+    title: 'Mahendar Maddela - Software Developer',
     description: 'Backend engineering portfolio showcasing enterprise APIs, cloud infrastructure, and full-stack solutions.',
     type: 'website',
   },
